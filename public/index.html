@@ -83,6 +83,12 @@
     .portfolio-card-category {
       @apply text-[10px] mb-1 tracking-widest;
     }
+    .portfolio-card-category-name {
+      @apply font-bold text-primary;
+    }
+    .portfolio-card-category-year {
+      @apply font-normal text-gray-400;
+    }
     .portfolio-card-title {
       @apply text-lg font-bold leading-tight;
     }
@@ -91,6 +97,16 @@
     }
     .portfolio-card-tag {
       @apply px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full;
+    }
+    /* Social card children */
+    .social-card-icon {
+      @apply w-7 h-7;
+    }
+    .social-card-domain {
+      @apply text-xs text-gray-400 mt-3;
+    }
+    .social-card-username {
+      @apply text-sm font-semibold text-gray-700;
     }
   </style>
   <style>
@@ -132,44 +148,44 @@
       </div>
       <div class="grid">
         <a class="social-card" href="https://x.com/temoki">
-          <img class="w-7 h-7 rounded-[6px]" src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="X">
-          <span class="text-xs text-gray-400 mt-3">x.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon rounded-[6px]" src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="X">
+          <span class="social-card-domain">x.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://github.com/temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub">
-          <span class="text-xs text-gray-400 mt-3">github.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub">
+          <span class="social-card-domain">github.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://facebook.com/temoki.kobayashi">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=64" alt="Facebook">
-          <span class="text-xs text-gray-400 mt-3">facebook.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki.kobayashi</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=64" alt="Facebook">
+          <span class="social-card-domain">facebook.com</span>
+          <span class="social-card-username">@temoki.kobayashi</span>
         </a>
         <a class="social-card" href="https://instagram.com/temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram">
-          <span class="text-xs text-gray-400 mt-3">instagram.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram">
+          <span class="social-card-domain">instagram.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://www.figma.com/@temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma">
-          <span class="text-xs text-gray-400 mt-3">figma.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma">
+          <span class="social-card-domain">figma.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://note.com/temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=note.com&sz=64" alt="note">
-          <span class="text-xs text-gray-400 mt-3">note.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=note.com&sz=64" alt="note">
+          <span class="social-card-domain">note.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://speakerdeck.com/temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=speakerdeck.com&sz=64" alt="Speakerdeck">
-          <span class="text-xs text-gray-400 mt-3">speakerdeck.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=speakerdeck.com&sz=64" alt="Speakerdeck">
+          <span class="social-card-domain">speakerdeck.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
         <a class="social-card" href="https://qiita.com/temoki">
-          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=qiita.com&sz=64" alt="Qiita">
-          <span class="text-xs text-gray-400 mt-3">qiita.com</span>
-          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+          <img class="social-card-icon" src="https://www.google.com/s2/favicons?domain=qiita.com&sz=64" alt="Qiita">
+          <span class="social-card-domain">qiita.com</span>
+          <span class="social-card-username">@temoki</span>
         </a>
       </div>
     </section>
@@ -181,7 +197,7 @@
       <div class="grid">
         <div class="portfolio-card">
           <div class="portfolio-card-content">
-            <p class="portfolio-card-category"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
+            <p class="portfolio-card-category"><span class="portfolio-card-category-name">Category</span> <span class="portfolio-card-category-year">(2024)</span></p>
             <h3 class="portfolio-card-title">Title</h3>
             <div class="portfolio-card-tags">
               <span class="portfolio-card-tag">Swift</span>
@@ -194,7 +210,7 @@
         </div>
         <div class="portfolio-card">
           <div class="portfolio-card-content">
-            <p class="portfolio-card-category"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
+            <p class="portfolio-card-category"><span class="portfolio-card-category-name">Category</span> <span class="portfolio-card-category-year">(2024)</span></p>
             <h3 class="portfolio-card-title">Title</h3>
             <div class="portfolio-card-tags">
               <span class="portfolio-card-tag">Flutter</span>
