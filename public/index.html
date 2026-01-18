@@ -65,14 +65,22 @@
     /* Social card */
     .social-card {
       @apply col-span-1 row-span-1 bg-card-light p-5 rounded-3xl
-             flex flex-col items-start justify-center active:scale-95 transition-transform;
+             flex flex-col items-start justify-center active:scale-95 transition-all duration-200;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    .social-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
     }
     /* Portfolio card */
     .portfolio-card {
       @apply col-span-2 row-span-1 bg-card-light rounded-3xl
-             overflow-hidden flex active:scale-[0.98] transition-transform;
+             overflow-hidden flex active:scale-[0.98] transition-all duration-200;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    .portfolio-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
     }
     .portfolio-card-content {
       @apply w-1/2 p-6 flex flex-col justify-center;
@@ -195,7 +203,7 @@
         <h2 class="section-header">Portfolio</h2>
       </div>
       <div class="grid">
-        <div class="portfolio-card">
+        <a class="portfolio-card" href="/projects/project-1">
           <div class="portfolio-card-content">
             <p class="portfolio-card-category"><span class="portfolio-card-category-name">Category</span> <span class="portfolio-card-category-year">(2024)</span></p>
             <h3 class="portfolio-card-title">Title</h3>
@@ -207,8 +215,8 @@
           <div class="portfolio-card-image">
             <div class="w-full h-full bg-cover bg-center rounded-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjmTDuHf4AW6BYnQV9qGTiRv2J98bOMFMG0_2Y-b1JGnbGbEZifA-xjllBhOkEeuEMPGyZrSF7MKrTWKh7VK9ozo4Qny4ilzyX6BISdPfNmFvujLFqCOqJULyGd-V-Sj7wNMSpfjwwQX4WAN7ZHNWktlYbIU2DUWyz7BiseptpMuFe_o_rkhz99uZowYAHmXK3-_dMcFX3y4NEiKSiY_pvH1hAQDgOwq6tO7-CFXxZ2Yyw1EKA3AjsP3HysZ8otXLHCyxC1jDNWHk");'></div>
           </div>
-        </div>
-        <div class="portfolio-card">
+        </a>
+        <a class="portfolio-card" href="/projects/project-2">
           <div class="portfolio-card-content">
             <p class="portfolio-card-category"><span class="portfolio-card-category-name">Category</span> <span class="portfolio-card-category-year">(2024)</span></p>
             <h3 class="portfolio-card-title">Title</h3>
@@ -220,7 +228,7 @@
           <div class="portfolio-card-image">
             <div class="w-full h-full bg-cover bg-center rounded-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgpd4vSdhm-PACTIlWAwYS_kZ4cbUsd4fEpw31MuHU5vT_dXKM7u73lDF7udYJSvR4vEQahgihH0fvxZk_KfG2LYzB937tEG0UPSqmwGmN_-69HZq6MU7DfBhavAToPUgGXc_SWbt2Wx346bH63BO0wXcN-uARlJK7xmlSjpApMj3IM166vTPjyOFfFfAz6oQO9jC_fqw0EMlSkbdL7F_8d2IZTBMr4NF9f62xtlnmcA5Q7uS5ZobelscnJObqla6NWdpM2vVzxtE");'></div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <footer class="text-center pb-8">
