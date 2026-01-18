@@ -62,6 +62,33 @@
     .portfolio-section {
       @apply mb-16;
     }
+    /* Profile card */
+    .profile-card {
+      @apply col-span-2 row-span-2 bg-card-light p-8 rounded-3xl
+             flex flex-col justify-between relative overflow-hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    .profile-card-content {
+      @apply relative z-10;
+    }
+    .profile-card-avatar {
+      @apply size-24 rounded-full bg-cover bg-center mb-6 border-[3px] border-gray-50 shadow-sm;
+    }
+    .profile-card-username {
+      @apply text-3xl font-bold tracking-tight mb-2;
+    }
+    .profile-card-info {
+      @apply flex items-center gap-2 mb-3;
+    }
+    .profile-card-name {
+      @apply text-lg text-gray-600 font-medium;
+    }
+    .profile-card-location {
+      @apply text-base text-gray-400 font-medium;
+    }
+    .profile-card-bio {
+      @apply text-gray-500 font-medium leading-relaxed;
+    }
     /* Social card */
     .social-card {
       @apply col-span-1 row-span-1 bg-card-light p-5 rounded-3xl
@@ -136,15 +163,15 @@
   <main class="max-w-md mx-auto p-6 pt-16 pb-20">
     <section class="portfolio-section" id="profile">
       <div class="grid">
-        <div class="col-span-2 row-span-2 bg-card-light p-8 rounded-3xl apple-shadow flex flex-col justify-between relative overflow-hidden">
-          <div class="relative z-10">
-            <div class="size-24 rounded-full bg-cover bg-center mb-6 border-[3px] border-gray-50 shadow-sm" style='background-image: url("assets/profile.jpg");'></div>
-            <h1 class="text-3xl font-bold tracking-tight mb-2">@temoki</h1>
-            <div class="flex items-center gap-2 mb-3">
-              <p class="text-lg text-gray-600 font-medium">Tomoki Kobayashi</p>
-              <span class="text-base text-gray-400 font-medium">Gifu, JP 🇯🇵</span>
+        <div class="profile-card">
+          <div class="profile-card-content">
+            <div class="profile-card-avatar" style='background-image: url("assets/profile.jpg");'></div>
+            <h1 class="profile-card-username">@temoki</h1>
+            <div class="profile-card-info">
+              <p class="profile-card-name">Tomoki Kobayashi</p>
+              <span class="profile-card-location">Gifu, JP 🇯🇵</span>
             </div>
-            <p class="text-gray-500 font-medium leading-relaxed">Software Developer / iOS, Flutter, Android<br/>I Love 👨👩👦 📱 📷 🚘🔋 🚴‍♂️ ☕️ 🍜 🍛.</p>
+            <p class="profile-card-bio">Software Developer / iOS, Flutter, Android<br/>I Love 👨👩👦 📱 📷 🚘🔋 🚴‍♂️ ☕️ 🍜 🍛.</p>
           </div>
         </div>
       </div>
