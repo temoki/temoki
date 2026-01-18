@@ -158,6 +158,12 @@
     .footer-text {
       @apply text-[11px] font-bold text-gray-400 tracking-[0.2em];
     }
+    .footer-credit {
+      @apply text-xs text-gray-400 mb-3;
+    }
+    .footer-credit a {
+      @apply text-gray-500 hover:text-gray-600 underline underline-offset-2 transition-colors;
+    }
   </style>
   <style>
     body {
@@ -505,8 +511,9 @@
           </div>
         </a>
       </div>
-    </section>
+    </section>   
     <footer class="footer">
+      <p class="footer-credit">This website was designed using <a href="https://stitch.withgoogle.com" target="_blank">Stitch</a> and built with <a href="https://claude.ai" target="_blank">Claude Code</a>.</p>      
       <p class="footer-text">&copy; 2026 hiraku.space</p>
     </footer>
   </main>
