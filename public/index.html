@@ -1,177 +1,179 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>temoki | Portfolio Dashboard</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#007AFF",
-                        "background-light": "#F2F2F7",
-                        "card-light": "#FFFFFF",
-                        "secondary-card": "#FBFBFD",
-                    },
-                    fontFamily: {
-                        "sans": ["Inter", "-apple-system", "BlinkMacSystemFont", "SF Pro Display", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "1rem",
-                        "xl": "1.5rem",
-                        "2xl": "1.75rem",
-                        "3xl": "2.25rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-<style type="text/tailwindcss">
-        body {
-            -webkit-font-smoothing: antialiased;
-            background-color: #F2F2F7;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: minmax(160px, auto);
-            gap: 16px;
-        }
-        .apple-shadow {
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-        }
-        ::-webkit-scrollbar {
-            display: none;
-        }
-        .section-header-container {
-            @apply flex items-center gap-2 mb-4 ml-1;
-        }
-        .section-header {
-            @apply text-[11px] font-bold text-gray-400 tracking-widest;
-        }
-        .section-icon {
-            @apply text-gray-400 text-[14px];
-        }
-        .portfolio-section {
-            @apply mb-16;
-        }
-    </style>
-<style>
-        body {
-            min-height: 100dvh;
-        }
-    </style>
-<style>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>temoki | Portfolio Dashboard</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#007AFF",
+            "background-light": "#F2F2F7",
+            "card-light": "#FFFFFF",
+            "secondary-card": "#FBFBFD",
+          },
+          fontFamily: {
+            "sans": ["Inter", "-apple-system", "BlinkMacSystemFont", "SF Pro Display", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "2xl": "1.75rem",
+            "3xl": "2.25rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    body {
+      -webkit-font-smoothing: antialiased;
+      background-color: #F2F2F7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(160px, auto);
+      gap: 16px;
+    }
+    .apple-shadow {
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .section-header-container {
+      @apply flex items-center gap-2 mb-4 ml-1;
+    }
+    .section-header {
+      @apply text-[11px] font-bold text-gray-400 tracking-widest;
+    }
+    .section-icon {
+      @apply text-gray-400 text-[14px];
+    }
+    .portfolio-section {
+      @apply mb-16;
+    }
+  </style>
+  <style>
+    body {
+      min-height: 100dvh;
+    }
+  </style>
+  <style>
     body {
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+</head>
 <body class="text-[#1D1D1F] transition-colors duration-300">
-<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-<div class="absolute top-[-5%] left-[-10%] size-[400px] bg-blue-400/10 rounded-full blur-[100px]"></div>
-<div class="absolute bottom-[10%] right-[-5%] size-[350px] bg-indigo-400/10 rounded-full blur-[80px]"></div>
-</div>
-<main class="max-w-md mx-auto p-6 pt-16 pb-20">
-<section class="portfolio-section" id="profile">
-<div class="grid">
-<div class="col-span-2 row-span-2 bg-card-light p-8 rounded-3xl apple-shadow flex flex-col justify-between relative overflow-hidden">
-<div class="relative z-10">
-<div class="size-24 rounded-full bg-cover bg-center mb-6 border-[3px] border-gray-50 shadow-sm" style='background-image: url("assets/profile.jpg");'>
-</div>
-<h1 class="text-3xl font-bold tracking-tight mb-2">@temoki</h1>
-<div class="flex items-center gap-2 mb-3">
-<p class="text-lg text-gray-600 font-medium">Tomoki Kobayashi</p>
-<span class="text-base text-gray-400 font-medium">Gifu, JP 🇯🇵</span>
-</div>
-<p class="text-gray-500 font-medium leading-relaxed">Software Developer / iOS, Flutter, Android<br />I Love 👨👩👦 📱 📷 🚘🔋 🚴‍♂️ ☕️ 🍜 🍛.</p>
-</div>
-</section>
-<section class="portfolio-section" id="socials">
-<div class="section-header-container">
-<span class="material-symbols-outlined section-icon">share</span>
-<h2 class="section-header">SOCIALS</h2>
-</div>
-<div class="grid">
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://x.com/temoki">
-<img class="w-7 h-7 rounded-[6px]" src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="X">
-<span class="text-xs text-gray-400 mt-3">x.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://github.com/temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub">
-<span class="text-xs text-gray-400 mt-3">github.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://facebook.com/temoki.kobayashi">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=64" alt="Facebook">
-<span class="text-xs text-gray-400 mt-3">facebook.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki.kobayashi</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://instagram.com/temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram">
-<span class="text-xs text-gray-400 mt-3">instagram.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://www.figma.com/@temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma">
-<span class="text-xs text-gray-400 mt-3">figma.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://note.com/temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=note.com&sz=64" alt="note">
-<span class="text-xs text-gray-400 mt-3">note.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://speakerdeck.com/temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=speakerdeck.com&sz=64" alt="Speakerdeck">
-<span class="text-xs text-gray-400 mt-3">speakerdeck.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-<a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://qiita.com/temoki">
-<img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=qiita.com&sz=64" alt="Qiita">
-<span class="text-xs text-gray-400 mt-3">qiita.com</span>
-<span class="text-sm font-semibold text-gray-700">@temoki</span>
-</a>
-</div>
-</section>
-<section class="portfolio-section" id="projects">
-<div class="section-header-container">
-<span class="material-symbols-outlined section-icon">grid_view</span>
-<h2 class="section-header">PROJECTS</h2>
-</div>
-<div class="grid">
-<div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
-<div class="w-1/3 h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjmTDuHf4AW6BYnQV9qGTiRv2J98bOMFMG0_2Y-b1JGnbGbEZifA-xjllBhOkEeuEMPGyZrSF7MKrTWKh7VK9ozo4Qny4ilzyX6BISdPfNmFvujLFqCOqJULyGd-V-Sj7wNMSpfjwwQX4WAN7ZHNWktlYbIU2DUWyz7BiseptpMuFe_o_rkhz99uZowYAHmXK3-_dMcFX3y4NEiKSiY_pvH1hAQDgOwq6tO7-CFXxZ2Yyw1EKA3AjsP3HysZ8otXLHCyxC1jDNWHk");'></div>
-<div class="w-2/3 p-6 flex flex-col justify-center">
-<p class="text-[10px] font-bold text-primary mb-1 tracking-widest">Case Study</p>
-<h3 class="text-lg font-bold leading-tight">Lunar UI System</h3>
-<div class="flex items-center mt-2 text-xs font-semibold text-gray-400">
-                            Details <span class="material-symbols-outlined text-[14px] ml-1">arrow_outward</span>
-</div>
-</div>
-</div>
-<div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
-<div class="w-1/3 h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgpd4vSdhm-PACTIlWAwYS_kZ4cbUsd4fEpw31MuHU5vT_dXKM7u73lDF7udYJSvR4vEQahgihH0fvxZk_KfG2LYzB937tEG0UPSqmwGmN_-69HZq6MU7DfBhavAToPUgGXc_SWbt2Wx346bH63BO0wXcN-uARlJK7xmlSjpApMj3IM166vTPjyOFfFfAz6oQO9jC_fqw0EMlSkbdL7F_8d2IZTBMr4NF9f62xtlnmcA5Q7uS5ZobelscnJObqla6NWdpM2vVzxtE");'></div>
-<div class="w-2/3 p-6 flex flex-col justify-center">
-<p class="text-[10px] font-bold text-primary mb-1 tracking-widest">Product</p>
-<h3 class="text-lg font-bold leading-tight">Eco-Track 2.0</h3>
-<div class="flex items-center mt-2 text-xs font-semibold text-gray-400">
-                            View <span class="material-symbols-outlined text-[14px] ml-1">arrow_outward</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="text-center pb-8">
-<p class="text-[11px] font-bold text-gray-400 tracking-[0.2em]">&copy; 2026 hiraku.space</p>
-</footer>
-</main>
-
-</body></html>
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute top-[-5%] left-[-10%] size-[400px] bg-blue-400/10 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-[10%] right-[-5%] size-[350px] bg-indigo-400/10 rounded-full blur-[80px]"></div>
+  </div>
+  <main class="max-w-md mx-auto p-6 pt-16 pb-20">
+    <section class="portfolio-section" id="profile">
+      <div class="grid">
+        <div class="col-span-2 row-span-2 bg-card-light p-8 rounded-3xl apple-shadow flex flex-col justify-between relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="size-24 rounded-full bg-cover bg-center mb-6 border-[3px] border-gray-50 shadow-sm" style='background-image: url("assets/profile.jpg");'></div>
+            <h1 class="text-3xl font-bold tracking-tight mb-2">@temoki</h1>
+            <div class="flex items-center gap-2 mb-3">
+              <p class="text-lg text-gray-600 font-medium">Tomoki Kobayashi</p>
+              <span class="text-base text-gray-400 font-medium">Gifu, JP 🇯🇵</span>
+            </div>
+            <p class="text-gray-500 font-medium leading-relaxed">Software Developer / iOS, Flutter, Android<br/>I Love 👨👩👦 📱 📷 🚘🔋 🚴‍♂️ ☕️ 🍜 🍛.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-section" id="socials">
+      <div class="section-header-container">
+        <span class="material-symbols-outlined section-icon">share</span>
+        <h2 class="section-header">SOCIALS</h2>
+      </div>
+      <div class="grid">
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://x.com/temoki">
+          <img class="w-7 h-7 rounded-[6px]" src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="X">
+          <span class="text-xs text-gray-400 mt-3">x.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://github.com/temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub">
+          <span class="text-xs text-gray-400 mt-3">github.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://facebook.com/temoki.kobayashi">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=64" alt="Facebook">
+          <span class="text-xs text-gray-400 mt-3">facebook.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki.kobayashi</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://instagram.com/temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram">
+          <span class="text-xs text-gray-400 mt-3">instagram.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://www.figma.com/@temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma">
+          <span class="text-xs text-gray-400 mt-3">figma.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://note.com/temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=note.com&sz=64" alt="note">
+          <span class="text-xs text-gray-400 mt-3">note.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://speakerdeck.com/temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=speakerdeck.com&sz=64" alt="Speakerdeck">
+          <span class="text-xs text-gray-400 mt-3">speakerdeck.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://qiita.com/temoki">
+          <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=qiita.com&sz=64" alt="Qiita">
+          <span class="text-xs text-gray-400 mt-3">qiita.com</span>
+          <span class="text-sm font-semibold text-gray-700">@temoki</span>
+        </a>
+      </div>
+    </section>
+    <section class="portfolio-section" id="projects">
+      <div class="section-header-container">
+        <span class="material-symbols-outlined section-icon">grid_view</span>
+        <h2 class="section-header">Portfolio</h2>
+      </div>
+      <div class="grid">
+        <div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
+          <div class="w-1/3 h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjmTDuHf4AW6BYnQV9qGTiRv2J98bOMFMG0_2Y-b1JGnbGbEZifA-xjllBhOkEeuEMPGyZrSF7MKrTWKh7VK9ozo4Qny4ilzyX6BISdPfNmFvujLFqCOqJULyGd-V-Sj7wNMSpfjwwQX4WAN7ZHNWktlYbIU2DUWyz7BiseptpMuFe_o_rkhz99uZowYAHmXK3-_dMcFX3y4NEiKSiY_pvH1hAQDgOwq6tO7-CFXxZ2Yyw1EKA3AjsP3HysZ8otXLHCyxC1jDNWHk");'></div>
+          <div class="w-2/3 p-6 flex flex-col justify-center">
+            <p class="text-[10px] font-bold text-primary mb-1 tracking-widest">Category</p>
+            <h3 class="text-lg font-bold leading-tight">Title</h3>
+            <div class="flex items-center mt-2 text-xs font-semibold text-gray-400">
+              Details <span class="material-symbols-outlined text-[14px] ml-1">arrow_outward</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
+          <div class="w-1/3 h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgpd4vSdhm-PACTIlWAwYS_kZ4cbUsd4fEpw31MuHU5vT_dXKM7u73lDF7udYJSvR4vEQahgihH0fvxZk_KfG2LYzB937tEG0UPSqmwGmN_-69HZq6MU7DfBhavAToPUgGXc_SWbt2Wx346bH63BO0wXcN-uARlJK7xmlSjpApMj3IM166vTPjyOFfFfAz6oQO9jC_fqw0EMlSkbdL7F_8d2IZTBMr4NF9f62xtlnmcA5Q7uS5ZobelscnJObqla6NWdpM2vVzxtE");'></div>
+          <div class="w-2/3 p-6 flex flex-col justify-center">
+            <p class="text-[10px] font-bold text-primary mb-1 tracking-widest">Category</p>
+            <h3 class="text-lg font-bold leading-tight">Title</h3>
+            <div class="flex items-center mt-2 text-xs font-semibold text-gray-400">
+              Details <span class="material-symbols-outlined text-[14px] ml-1">arrow_outward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center pb-8">
+      <p class="text-[11px] font-bold text-gray-400 tracking-[0.2em]">&copy; 2026 hiraku.space</p>
+    </footer>
+  </main>
+</body>
+</html>
