@@ -62,6 +62,36 @@
     .portfolio-section {
       @apply mb-16;
     }
+    /* Social card */
+    .social-card {
+      @apply col-span-1 row-span-1 bg-card-light p-5 rounded-3xl
+             flex flex-col items-start justify-center active:scale-95 transition-transform;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    /* Portfolio card */
+    .portfolio-card {
+      @apply col-span-2 row-span-1 bg-card-light rounded-3xl
+             overflow-hidden flex active:scale-[0.98] transition-transform;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    }
+    .portfolio-card-content {
+      @apply w-1/2 p-6 flex flex-col justify-center;
+    }
+    .portfolio-card-image {
+      @apply w-1/2 py-4 pr-4 flex items-center justify-center;
+    }
+    .portfolio-card-category {
+      @apply text-[10px] mb-1 tracking-widest;
+    }
+    .portfolio-card-title {
+      @apply text-lg font-bold leading-tight;
+    }
+    .portfolio-card-tags {
+      @apply flex flex-wrap gap-1.5 mt-3;
+    }
+    .portfolio-card-tag {
+      @apply px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full;
+    }
   </style>
   <style>
     body {
@@ -101,42 +131,42 @@
         <h2 class="section-header">SOCIALS</h2>
       </div>
       <div class="grid">
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://x.com/temoki">
+        <a class="social-card" href="https://x.com/temoki">
           <img class="w-7 h-7 rounded-[6px]" src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="X">
           <span class="text-xs text-gray-400 mt-3">x.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://github.com/temoki">
+        <a class="social-card" href="https://github.com/temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub">
           <span class="text-xs text-gray-400 mt-3">github.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://facebook.com/temoki.kobayashi">
+        <a class="social-card" href="https://facebook.com/temoki.kobayashi">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=64" alt="Facebook">
           <span class="text-xs text-gray-400 mt-3">facebook.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki.kobayashi</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://instagram.com/temoki">
+        <a class="social-card" href="https://instagram.com/temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram">
           <span class="text-xs text-gray-400 mt-3">instagram.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://www.figma.com/@temoki">
+        <a class="social-card" href="https://www.figma.com/@temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma">
           <span class="text-xs text-gray-400 mt-3">figma.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://note.com/temoki">
+        <a class="social-card" href="https://note.com/temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=note.com&sz=64" alt="note">
           <span class="text-xs text-gray-400 mt-3">note.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://speakerdeck.com/temoki">
+        <a class="social-card" href="https://speakerdeck.com/temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=speakerdeck.com&sz=64" alt="Speakerdeck">
           <span class="text-xs text-gray-400 mt-3">speakerdeck.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
         </a>
-        <a class="col-span-1 row-span-1 bg-card-light p-5 rounded-3xl apple-shadow flex flex-col items-start justify-center active:scale-95 transition-transform" href="https://qiita.com/temoki">
+        <a class="social-card" href="https://qiita.com/temoki">
           <img class="w-7 h-7" src="https://www.google.com/s2/favicons?domain=qiita.com&sz=64" alt="Qiita">
           <span class="text-xs text-gray-400 mt-3">qiita.com</span>
           <span class="text-sm font-semibold text-gray-700">@temoki</span>
@@ -149,29 +179,29 @@
         <h2 class="section-header">Portfolio</h2>
       </div>
       <div class="grid">
-        <div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
-          <div class="w-1/2 p-6 flex flex-col justify-center">
-            <p class="text-[10px] mb-1 tracking-widest"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
-            <h3 class="text-lg font-bold leading-tight">Title</h3>
-            <div class="flex flex-wrap gap-1.5 mt-3">
-              <span class="px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full">Swift</span>
-              <span class="px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full">iOS</span>
+        <div class="portfolio-card">
+          <div class="portfolio-card-content">
+            <p class="portfolio-card-category"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
+            <h3 class="portfolio-card-title">Title</h3>
+            <div class="portfolio-card-tags">
+              <span class="portfolio-card-tag">Swift</span>
+              <span class="portfolio-card-tag">iOS</span>
             </div>
           </div>
-          <div class="w-1/2 py-4 pr-4 flex items-center justify-center">
+          <div class="portfolio-card-image">
             <div class="w-full h-full bg-cover bg-center rounded-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjmTDuHf4AW6BYnQV9qGTiRv2J98bOMFMG0_2Y-b1JGnbGbEZifA-xjllBhOkEeuEMPGyZrSF7MKrTWKh7VK9ozo4Qny4ilzyX6BISdPfNmFvujLFqCOqJULyGd-V-Sj7wNMSpfjwwQX4WAN7ZHNWktlYbIU2DUWyz7BiseptpMuFe_o_rkhz99uZowYAHmXK3-_dMcFX3y4NEiKSiY_pvH1hAQDgOwq6tO7-CFXxZ2Yyw1EKA3AjsP3HysZ8otXLHCyxC1jDNWHk");'></div>
           </div>
         </div>
-        <div class="col-span-2 row-span-1 bg-card-light rounded-3xl apple-shadow overflow-hidden flex group active:scale-[0.98] transition-transform">
-          <div class="w-1/2 p-6 flex flex-col justify-center">
-            <p class="text-[10px] mb-1 tracking-widest"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
-            <h3 class="text-lg font-bold leading-tight">Title</h3>
-            <div class="flex flex-wrap gap-1.5 mt-3">
-              <span class="px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full">Flutter</span>
-              <span class="px-2 py-0.5 text-[10px] font-semibold text-gray-500 bg-gray-100 rounded-full">Dart</span>
+        <div class="portfolio-card">
+          <div class="portfolio-card-content">
+            <p class="portfolio-card-category"><span class="font-bold text-primary">Category</span> <span class="font-normal text-gray-400">(2024)</span></p>
+            <h3 class="portfolio-card-title">Title</h3>
+            <div class="portfolio-card-tags">
+              <span class="portfolio-card-tag">Flutter</span>
+              <span class="portfolio-card-tag">Dart</span>
             </div>
           </div>
-          <div class="w-1/2 py-4 pr-4 flex items-center justify-center">
+          <div class="portfolio-card-image">
             <div class="w-full h-full bg-cover bg-center rounded-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgpd4vSdhm-PACTIlWAwYS_kZ4cbUsd4fEpw31MuHU5vT_dXKM7u73lDF7udYJSvR4vEQahgihH0fvxZk_KfG2LYzB937tEG0UPSqmwGmN_-69HZq6MU7DfBhavAToPUgGXc_SWbt2Wx346bH63BO0wXcN-uARlJK7xmlSjpApMj3IM166vTPjyOFfFfAz6oQO9jC_fqw0EMlSkbdL7F_8d2IZTBMr4NF9f62xtlnmcA5Q7uS5ZobelscnJObqla6NWdpM2vVzxtE");'></div>
           </div>
         </div>
